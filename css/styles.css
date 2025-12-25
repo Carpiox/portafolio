@@ -110,7 +110,7 @@ section h2::after {
   height: 30px;
   object-fit: contain;
   display: block;
-
+  margin: 0 auto;
   opacity: 0.9;
 }
 
@@ -122,9 +122,6 @@ section h2::after {
   margin-top: 10px;
   opacity: 0.9;
 }
-
-
-
 
 /* LINKS */
 a {
@@ -143,7 +140,70 @@ a:hover {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  /* Hero */
+  header {
+    padding: 60px 15px;
+  }
+
   header h1 {
     font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  /* Sections */
+  section {
+    margin: 50px auto;
+    padding: 0 15px;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+  }
+
+  section h2::after {
+    width: 40px;
+    height: 3px;
+  }
+
+  /* Cards */
+  .card {
+    padding: 20px;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card span {
+    font-size: 0.85rem;
+  }
+
+  /* Skills grid */
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .skill {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Footer / Contact */
+  .contact p {
+    font-size: 0.9rem;
   }
 }
